@@ -2,17 +2,12 @@ package tech.viacomcbs.intothespring;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SheldonApplicationListener {
+public class SheldonApplicationListener implements ApplicationListener<ApplicationEvent> {
 
-    public SheldonApplicationListener() {
-        System.out.println("SheldonApplicationListener created");
-    }
-
-    @EventListener
+    @Override
     public void onApplicationEvent(ApplicationEvent event) {
         System.out.println("Received --> " + event.getClass().getName());
     }
