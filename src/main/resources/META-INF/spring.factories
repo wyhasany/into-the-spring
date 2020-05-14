@@ -1,2 +1,2 @@
-org.springframework.context.ApplicationListener=\
-tech.viacomcbs.intothespring.SheldonApplicationListener
+#org.springframework.context.ApplicationListener=\
+#tech.viacomcbs.intothespring.SheldonApplicationListener
