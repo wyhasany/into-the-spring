@@ -13,6 +13,6 @@ public class MagicAutoConfigurationImportSelector implements DeferredImportSelec
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         System.out.println("MagicAutoConfigurationImportSelector.selectImports() Importing auto configuration");
-        return new String[]{};
+        return new String[]{"outside.MagicAutoConfiguration"};
     }
 }
