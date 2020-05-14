@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
+
 @SpringBootApplication
 @Import({MagicAutoConfigurationImportSelector.class, MagicImportRegistrar.class})
 public class IntoTheSpringApplication {
@@ -26,6 +28,11 @@ public class IntoTheSpringApplication {
 
         public SimpleController() {
             System.out.println("Annotated bean created");
+        }
+
+        @PostConstruct
+        void init() {
+            System.out.println("Annotated bean initialized");
         }
 
         @GetMapping("/hello")
