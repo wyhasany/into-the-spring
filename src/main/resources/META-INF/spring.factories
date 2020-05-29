@@ -3,4 +3,5 @@ tech.viacomcbs.intothespring.SheldonApplicationListener
 org.springframework.boot.env.EnvironmentPostProcessor=\
 tech.viacomcbs.intothespring.CustomEnvironmentPostProcessor
 org.springframework.context.ApplicationContextInitializer=\
-tech.viacomcbs.intothespring.SmigolApplicationContextInitializer
+tech.viacomcbs.intothespring.SmigolApplicationContextInitializer,\
+tech.viacomcbs.intothespring.FunctionalBeanConfiguration
